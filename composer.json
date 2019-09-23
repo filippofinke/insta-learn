@@ -13,6 +13,7 @@
         }
     },
     "minimum-stability": "stable",
+    "license": "MIT",
     "require": {
         "php-ai/php-ml": "^0.8.0",
         "tuqqu/gender-detector": "^0.2.0"
