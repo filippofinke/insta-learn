@@ -1,0 +1,4 @@
+/vendor/
+/data/scraper.php
+composer.lock
+instalearn.model

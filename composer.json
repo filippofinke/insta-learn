@@ -1,0 +1,20 @@
+{
+    "name": "filippofinke/insta-learn",
+    "description": "Machine learning based follow unfollow algorithm",
+    "authors": [
+        {
+            "name": "Filippo Finke",
+            "email": "filippo.finke@samtrevano.ch"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FilippoFinke\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php-ai/php-ml": "^0.8.0",
+        "tuqqu/gender-detector": "^0.2.0"
+    }
+}
