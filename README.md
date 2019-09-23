@@ -14,7 +14,7 @@ composer require filippofinke/insta-learn
 ```
 
 ### How to use
-```
+```php
 <?php
 use FilippoFinke\InstaLearn;
 use FilippoFinke\User;
@@ -39,7 +39,7 @@ var_dump($prediction);
 
 
 ### How to train
-```
+```php
 <?php
 use Phpml\Dataset\CsvDataset;
 use FilippoFinke\InstaLearn;
