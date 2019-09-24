@@ -6,6 +6,8 @@ namespace FilippoFinke;
 
 use Phpml\Classification\KNearestNeighbors;
 use Phpml\ModelManager;
+use Phpml\Dataset\CsvDataset;
+
 class InstaLearn {
 
     private $classifier;
@@ -27,8 +29,9 @@ class InstaLearn {
         echo "Model loaded!" . PHP_EOL;
     }
 
-    public function train($dataset) {
+    public function train($path) {
         echo "Training model..." . PHP_EOL;
+        $dataset = new CsvDataset($path, 7, true);
         $this->classifier->train($dataset->getSamples(), $dataset->getTargets());
         echo "Training finished!" . PHP_EOL;
     }

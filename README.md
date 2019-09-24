@@ -41,14 +41,12 @@ var_dump($prediction);
 ### How to train
 ```php
 <?php
-use Phpml\Dataset\CsvDataset;
 use FilippoFinke\InstaLearn;
 
 // Get the CsvDataset
-$dataset = new CsvDataset('data/data.csv', 7, true);
 $il = new InstaLearn();
 // Train the classifier
-$il->train($dataset);
+$il->train('data/data.csv');
 // Save the model
 $il->save($model);
 ```

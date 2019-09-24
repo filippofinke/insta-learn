@@ -2,14 +2,13 @@
 /**
  * Filippo Finke
  */
-use Phpml\Dataset\CsvDataset;
 use FilippoFinke\InstaLearn;
 use FilippoFinke\User;
 require_once __DIR__ . '/../vendor/autoload.php';
 ini_set('memory_limit', '-1');
 
 $model = __DIR__ . '/../instalearn.model';
-$dataset = new CsvDataset(__DIR__ . '/../data/data.csv', 7, true);
+$dataset = __DIR__ . '/../data/data.csv';
 $il = new InstaLearn();
 if (!file_exists($model)) {
     $il->train($dataset);
