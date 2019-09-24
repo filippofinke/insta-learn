@@ -55,6 +55,7 @@ $il->save($model);
 You have to do it by yourself.
 
 ### Visualization
+red = follow_back, green = not_follow_back
 ![Dataset Visualization](visualization/users.png)
 
 ### Authors
