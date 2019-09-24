@@ -54,6 +54,8 @@ $il->save($model);
 ### How to get the training data
 You have to do it by yourself.
 
+### Visualization
+![Dataset Visualization](visualization/users.png)
 
 ### Authors
 - Filippo Finke
